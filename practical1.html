@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture Timetable</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e9f7ef;  /* Light greenish background for the entire page */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .timetable-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 1100px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #4CAF50; /* Green background for headers */
+      color: white;
+      padding: 12px;
+      font-size: 1.1rem;
+    }
+
+    td {
+      padding: 12px;
+      font-size: 1rem;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f7f7f7;  /* Light grey for alternate rows */
+    }
+
+    tbody tr:hover {
+      background-color: #e2f9e1;  /* Light green hover effect for rows */
+    }
+
+    td:first-child {
+      background-color: #e2f9e1;  /* Light green background for time column */
+      font-weight: bold;
+    }
+
+    th, td {
+      text-align: center;  /* Ensure everything is aligned to the center */
+    }
+
+    /* Adding a little responsive behavior for smaller screens */
+    @media (max-width: 768px) {
+      .timetable-container {
+        width: 95%;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      table {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timetable-container">
+    <h1>Weekly Timetable</h1>
+    <table class="timetable">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8:00 - 9:00</td>
+          <td>Math</td>
+          <td>English</td>
+          <td>Physics</td>
+          <td>Chemistry</td>
+          <td>Biology</td>
+        </tr>
+        <tr>
+          <td>9:00 - 10:00</td>
+          <td>History</td>
+          <td>Math</td>
+          <td>English</td>
+          <td>Physics</td>
+          <td>Chemistry</td>
+        </tr>
+        <tr>
+          <td>10:00 - 11:00</td>
+          <td>Computer Science</td>
+          <td>History</td>
+          <td>Math</td>
+          <td>English</td>
+          <td>Physics</td>
+        </tr>
+        <tr>
+          <td>11:00 - 12:00</td>
+          <td>Biology</td>
+          <td>Computer Science</td>
+          <td>History</td>
+          <td>Math</td>
+          <td>English</td>
+        </tr>
+        <tr>
+          <td>12:00 - 1:00</td>
+          <td>Chemistry</td>
+          <td>Biology</td>
+          <td>Computer Science</td>
+          <td>History</td>
+          <td>Math</td>
+        </tr>
+        <tr>
+          <td>1:00 - 2:00</td>
+          <td>Physics</td>
+          <td>Chemistry</td>
+          <td>Biology</td>
+          <td>Computer Science</td>
+          <td>History</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
